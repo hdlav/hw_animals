@@ -43,3 +43,14 @@ sudo apt install software-properties-common
 sudo add-apt-repository 'deb http://archive.ubuntu.com/ubuntu 20.04.3 universe multiverse'
 sudo apt update
 ```
+---
+ 4. Установить и удалить deb-пакет с помощью dpkg.
+ 
+ Решение:
+ 
+```bash
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
+sudo dpkg -r mysql-apt-config_0.8.12-1_all.deb
+```
+---
